@@ -1,0 +1,276 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Detail Kupon
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    }
+  </style>
+ </head>
+ <body class="bg-[#f0f6f5] min-h-screen">
+  <header class="flex items-center justify-between bg-white px-4 py-3 border-b border-gray-200">
+   <div class="flex items-center space-x-3">
+    <button aria-label="Back" class="text-2xl text-black">
+     <i class="fas fa-arrow-left">
+     </i>
+    </button>
+    <h1 class="font-extrabold text-lg text-gray-900">
+     Detail Kupon
+    </h1>
+   </div>
+   <button aria-label="WhatsApp" class="text-green-500 text-2xl">
+    <i class="fab fa-whatsapp">
+    </i>
+   </button>
+  </header>
+  <main class="p-4">
+   <section class="bg-[#edf3f2] rounded-xl p-5 mb-5">
+    <div class="flex items-center mb-5">
+     <div class="flex items-center space-x-3 flex-1">
+      <div class="bg-yellow-400 rounded-full p-1.5">
+       <i class="fas fa-clock text-white text-base">
+       </i>
+      </div>
+      <h2 class="font-extrabold text-xl leading-tight text-gray-900">
+       Telah
+       <br/>
+       Ditukarkan
+      </h2>
+     </div>
+     <div class="text-right flex flex-col items-end space-y-0.5 text-gray-600 text-xs font-normal">
+      <span>
+       Hitung
+      </span>
+      <span>
+       mundur
+      </span>
+     </div>
+     <div class="flex space-x-1 ml-4">
+      <div class="bg-black text-white font-mono font-semibold text-sm rounded-md px-2 py-1 select-none" id="countdown-hours">
+       47
+      </div>
+      <div class="bg-black text-white font-mono font-semibold text-sm rounded-md px-2 py-1 select-none" id="countdown-minutes">
+       59
+      </div>
+      <div class="bg-black text-white font-mono font-semibold text-sm rounded-md px-2 py-1 select-none" id="countdown-seconds">
+       51
+      </div>
+     </div>
+    </div>
+    <div class="bg-white rounded-xl p-4">
+     <div class="flex items-center space-x-3 mb-3">
+      <img alt="Two food packages with fried chicken and sides on white trays" class="w-10 h-10 object-contain rounded" height="40" src="https://storage.googleapis.com/a1aa/image/ef40812b-3842-43bd-4b7a-b0576dc6e695.jpg" width="40"/>
+      <div>
+       <h3 class="font-semibold text-gray-900 text-lg leading-tight">
+        2 Hoka Hemat (HH 2 + HH 3)
+       </h3>
+       <p class="text-gray-500 text-sm flex items-center space-x-1">
+        <span>
+         •
+        </span>
+        <span>
+         Tersedia selama jam kerja
+        </span>
+       </p>
+       <p class="font-semibold text-gray-900 mt-1">
+        Rp20.000
+       </p>
+      </div>
+     </div>
+     <hr class="border-dashed border-gray-300 mb-5"/>
+     <div class="text-center mb-3">
+      <p class="font-semibold text-gray-900 text-base">
+       Jumlah Kupon yang ditukarkan:
+       <span class="text-pink-600">
+        1
+       </span>
+      </p>
+     </div>
+     <div class="bg-white rounded-xl p-4 shadow-inner inline-block mx-auto">
+      <div class="flex items-center justify-center space-x-3">
+       <img alt="Black and white QR code for coupon redemption" class="w-28 h-28" height="120" src="bc1" width="120"/>
+       <img alt="Black vertical barcode lines for coupon" class="w-10 h-28" height="120" src="bc2" width="40"/>
+      </div>
+      <div class="flex items-center justify-center mt-3 space-x-2">
+       <span class="text-gray-700 font-normal text-base tracking-widest">
+        4483 0698 9576
+       </span>
+       <button class="text-gray-400 bg-gray-200 text-xs font-semibold rounded px-2 py-1 cursor-not-allowed select-none" disabled="">
+        Salin
+       </button>
+      </div>
+     </div>
+    </div>
+   </section>
+   <section class="bg-white rounded-t-xl border-t border-gray-300 px-4 pt-4 pb-10">
+       <nav class="flex space-x-6 border-b-2 border-black pb-2">
+     <button aria-selected="true" class="font-semibold text-black border-b-4 border-black pb-1 text-base" id="tab-terms" role="tab" type="button">
+      Syarat Ketentuan
+     </button>
+     <button aria-selected="false" class="text-gray-500 text-base" id="tab-howto" role="tab" type="button">
+      Cara Penggunaan
+     </button>
+    </nav>
+        <div class="mt-4 text-base leading-relaxed" id="content-terms" role="tabpanel" tabindex="0">
+     <p class="font-semibold mb-1">
+      Redemption time:
+     </p>
+     <p class="text-gray-400 mb-4">
+      12 Apr 2025 00:00 - 29 May 2025 23:59,Once expired, it is invalid.
+     </p>
+     <p class="font-semibold mb-1">
+      Purchase limit:
+     </p>
+     <p class="text-gray-400 mb-4">
+      Limit 49 item per day, 1000 items per person.
+     </p>
+     <p class="font-semibold mb-1">
+      Usage time:
+     </p>
+     <p class="text-gray-400 mb-4">
+      Available during business hours
+     </p>
+     <p class="font-semibold mb-1">
+      Usage rules:
+     </p>
+     <p class="text-gray-400 whitespace-pre-line">
+      1. Valid for Dine-In/Take Away (Offline) at HokBen stores in JABODETABEK,
+          Serang, Banten, Cilegon, Karawang, Cirebon, Garut, Tasikmalaya, Central
+          Java, and Yogyakarta.
+          2. Voucher redemption period is valid until May 31, 2025
+          3. customer may online redeem a maximum of 10 vouchers item per day at one
+          Hokben Store
+          4. Redemption are personal and may not be pooled
+          5. All Redemption must be made directly at Hokben stores, redemption
+          through itermediaries is not allowed
+          6. Product Items cannot be replaced with other product
+          7. Price does not include take away fee
+          8. Screenshot of the voucher is not valid
+          9. The HokBen Fried Chicken (HFC), Ramen, and Tokyo Bowl menus are not
+          available at all HokBen Express/Kiosk stores and HokBen Grand Indonesia.
+          10. The voucher CANNOT BE USED outside the areas mentioned above.
+     </p>
+    </div>
+    <div class="mt-4 text-base leading-relaxed hidden" id="content-howto" role="tabpanel" tabindex="0">
+     <p class="font-semibold mb-1">
+      How to use:
+     </p>
+     <p class="text-gray-400">
+      1. Present the voucher at the cashier before ordering.
+      <br/>
+      2. Voucher is valid for dine-in and take away only.
+      <br/>
+      3. Voucher cannot be combined with other promotions.
+      <br/>
+      4. Voucher is valid only at participating stores.
+      <br/>
+      5. Please check the voucher expiration date before use.
+     </p>
+    </div>
+   </div>
+   <p class="text-gray-600 mb-2 text-base">
+    Available at the following stores
+   </p>
+   <div aria-label="Store information" class="bg-white rounded-xl p-4 flex flex-col space-y-3 max-w-md" role="region">
+    <div class="flex items-center space-x-3">
+     <img alt="Emoji of a store with yellow awning and pink building" class="w-8 h-8 flex-shrink-0" height="32" src="https://storage.googleapis.com/a1aa/image/eb68e3da-d8b8-47da-e9c1-f48ae40ab023.jpg" width="32"/>
+     <div class="flex-1">
+      <h2 class="font-extrabold text-lg leading-tight text-gray-900">
+       C54 - HokBen Kitchen Pasar Rumput Setiabudi
+      </h2>
+      <div class="flex items-center space-x-1 mt-1 text-gray-700 text-sm">
+       <i class="fas fa-phone-alt text-green-600">
+       </i>
+       <span>
+        Contact
+       </span>
+      </div>
+     </div>
+     <button aria-label="Navigate to store location" class="text-green-600 hover:text-green-700 focus:outline-none focus:ring-2 focus:ring-green-600 rounded-full p-1" type="button">
+      <i class="fas fa-paper-plane">
+      </i>
+     </button>
+    </div>
+    <hr class="border-gray-300"/>
+    <a class="text-blue-600 text-sm font-normal hover:underline" href="#">
+     View 289 other outlets&gt;
+    </a>
+   </div>
+    </div>
+   </section>
+  </main>
+  <script>
+const tabTerms = document.getElementById("tab-terms");
+    const tabHowto = document.getElementById("tab-howto");
+    const contentTerms = document.getElementById("content-terms");
+    const contentHowto = document.getElementById("content-howto");
+
+    tabTerms.addEventListener("click", () => {
+      tabTerms.classList.add("font-semibold", "text-black", "border-b-4", "border-black");
+      tabTerms.classList.remove("text-gray-500");
+      tabTerms.setAttribute("aria-selected", "true");
+
+      tabHowto.classList.remove("font-semibold", "text-black", "border-b-4", "border-black");
+      tabHowto.classList.add("text-gray-500");
+      tabHowto.setAttribute("aria-selected", "false");
+
+      contentTerms.classList.remove("hidden");
+      contentHowto.classList.add("hidden");
+      contentTerms.focus();
+    });
+
+    tabHowto.addEventListener("click", () => {
+      tabHowto.classList.add("font-semibold", "text-black", "border-b-4", "border-black");
+      tabHowto.classList.remove("text-gray-500");
+      tabHowto.setAttribute("aria-selected", "true");
+
+      tabTerms.classList.remove("font-semibold", "text-black", "border-b-4", "border-black");
+      tabTerms.classList.add("text-gray-500");
+      tabTerms.setAttribute("aria-selected", "false");
+
+      contentHowto.classList.remove("hidden");
+      contentTerms.classList.add("hidden");
+      contentHowto.focus();
+    });
+   // Countdown timer logic
+   // Set countdown duration (e.g., 48 hours)
+   let countdownDuration = 48 * 60 * 60; // 48 hours in seconds
+
+   const hoursEl = document.getElementById('countdown-hours');
+   const minutesEl = document.getElementById('countdown-minutes');
+   const secondsEl = document.getElementById('countdown-seconds');
+
+   function updateCountdown() {
+     if (countdownDuration < 0) {
+       hoursEl.textContent = '00';
+       minutesEl.textContent = '00';
+       secondsEl.textContent = '00';
+       clearInterval(countdownInterval);
+       return;
+     }
+
+     const hours = Math.floor(countdownDuration / 3600);
+     const minutes = Math.floor((countdownDuration % 3600) / 60);
+     const seconds = countdownDuration % 60;
+
+     hoursEl.textContent = String(hours).padStart(2, '0');
+     minutesEl.textContent = String(minutes).padStart(2, '0');
+     secondsEl.textContent = String(seconds).padStart(2, '0');
+
+     countdownDuration--;
+   }
+
+   updateCountdown();
+   const countdownInterval = setInterval(updateCountdown, 1000);
+  </script>
+ </body>
+</html>
